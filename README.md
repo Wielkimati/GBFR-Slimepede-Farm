@@ -1,4 +1,4 @@
-# GBFR-Slimepede-Farm
+# Granblue Fantasy: Relink Slimepede Farm
 Simple AutoHotKey script I made for grinding the 'Slimepede' mission in Granblue Fantasy: Relink. Grinding it is a slog, and I wanted to automate that so that I can leave my pc when I go to sleep.
 
 Written using AutoHotKey V2.
