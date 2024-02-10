@@ -68,6 +68,11 @@ Currently the script sends the inputs to whatever window you have selected, so d
 
 You can end the grinding any time you'd like by pressing Shift + Escape combo. After that, the program will exit and will need to be run again from .exe to continue.
 
+## Video example
+Click the image below to be redirected to an example of this working on YouTube.
+
+[![Video Example](https://img.youtube.com/vi/zS8x2w7eneI/0.jpg)](https://www.youtube.com/watch?v=zS8x2w7eneI "Video Example")
+
 ## Contact
 Created by [@Wielkimati](https://github.com/Wielkimati)
 
