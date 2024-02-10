@@ -54,7 +54,7 @@ After all, no point in making the PC eat more power than it's necessary.
 But for general script usage, it looks like this:
 - Go to Seedhollow (The second, bigger city).
 - Go to the quest counter and take the Slimepede quest once, by selecting it from "By Difficulty -> Maniac" tab.
-- After that, press 3, and 3 again to abandon the quest.
+- After that, press 3, 3 again, and left mouse click, to abandon the quest.
 
 And you're ready. The point of doing that is so Slimepede can be consistently selected from quest list with just left mouse clicks. If you want to test if you've done this correctly, then just go to quest counter again and see if you can accept new Slimepede quest using just left mouse clicks.
 
