@@ -18,7 +18,7 @@ I tried writting the version of this script that'd not go back into the town, bu
 I've also attached another script for spamming left mouse button, so you can burn through your knicknack vouchers more easily after grinding, without developing the famous carpal tunnel syndrome.
 
 ## Setup
-- Grab the newest release from [releases page](https://github.com/Wielkimati/GBFR-Slimepede-Farm/releases).
+- Grab the newest release "Slimepede.Grinder.zip" from [releases page](https://github.com/Wielkimati/GBFR-Slimepede-Farm/releases).
 - Extract the files anywhere you'd like on your computer and run the Slimepede Grind.exe.
 
 You don't need to have AHK V2 installed if you use this script like this. Should work on any Windows machine out of the box.
