@@ -1,0 +1,140 @@
+﻿#SingleInstance Force
+#Requires AutoHotkey v2.0
+
+;Timings in miliseconds
+movingTime := 12000
+questTime := 168000
+loadingTime := 7000
+
+$F1::{
+	loop{
+		TeleportToQuestCounter()
+
+		GoToQuestCounterAndGetSlimepedeQuest()
+
+		EmbarkOnQuest()
+
+		;Loading quest
+		Sleep loadingTime
+
+		MoveCharacterToLocationAtStart()
+
+		startTime := A_TickCount
+		Loop {
+			MoveCharacterAndShoot()
+		} Until (A_TickCount - startTime > questTime)
+		ClearKeys()
+		
+		;Wait for quest end, and wait some more just o be sure everything is in the starting place again
+		Sleep 120000
+	}
+}
+
+TeleportToQuestCounter(){
+	SendInput "{r down}"
+	Sleep 100
+	SendInput "{r up}"
+	Sleep 500
+	SendEvent "{LButton}"
+	Sleep 1000
+	SendEvent "{LButton}"
+	Sleep 3000
+	SendInput "{w down}"
+	Sleep 1000
+	SendInput "{w up}"
+	Sleep 1000
+}
+
+GoToQuestCounterAndGetSlimepedeQuest(){
+	SendInput "{f down}"
+	Sleep 500
+	SendInput "{f up}"
+	Sleep 5000
+
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+
+	Sleep 2000
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+	Sleep 2000
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+	Sleep 2000
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+	Sleep 2000
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+	Sleep 5000
+}
+
+EmbarkOnQuest(){
+	SendInput "{3 down}"
+	Sleep 500
+	SendInput "{3 up}"
+	Sleep 3000
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
+}
+
+MoveCharacterToLocationAtStart(){
+	SendInput "{w down}"
+	Sleep movingTime
+	SendInput "{w up}"
+}
+
+MoveCharacterAndShoot(){
+	SendInput "{w down}"
+	FireWeapon()
+	Sleep 20
+	SendInput "{w up}"
+	FireWeapon()
+	Sleep 20
+
+	SendInput "{d down}"
+	FireWeapon()
+	Sleep 20
+	SendInput "{d up}"
+	FireWeapon()
+	Sleep 20
+
+	SendInput "{s down}"
+	FireWeapon()
+	Sleep 20
+	SendInput "{s up}"
+	FireWeapon()
+	Sleep 20
+
+	SendInput "{a down}"
+	FireWeapon()
+	Sleep 20
+	SendInput "{a up}"
+	FireWeapon()
+	Sleep 20
+}
+
+FireWeapon(){
+	SendEvent "{LButton}"
+	Sleep 5
+	SendEvent "{LButton}"
+	Sleep 5
+}
+
+ClearKeys(){
+	SendInput "{w up}"
+	SendInput "{a up}"
+	SendInput "{s up}"
+	SendInput "{d up}"
+}
+
+$+esc::{
+	ClearKeys()
+	exitapp
+}

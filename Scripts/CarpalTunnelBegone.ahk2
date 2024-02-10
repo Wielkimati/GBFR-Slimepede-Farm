@@ -1,0 +1,20 @@
+﻿#SingleInstance Force
+#Requires AutoHotkey v2.0
+
+$F1::{
+    SetTimer(SpamLMB, 20)
+}
+
+$F2::{
+    SetTimer(SpamLMB, 0)
+}
+
+SpamLMB(){
+    SendEvent "{LButton Down}"
+	Sleep 20
+	SendEvent "{LButton up}"
+}
+
+$+esc::{
+	exitapp
+}
