@@ -77,6 +77,9 @@ Click the image below to be redirected to an example of this working on YouTube.
 
 [![Video Example](https://img.youtube.com/vi/zS8x2w7eneI/0.jpg)](https://www.youtube.com/watch?v=zS8x2w7eneI "Video Example")
 
+## TODO
+I'll spend some more time trying to optimize the delays between inputs to make this faster in the near future.
+
 ## Contact
 Created by [@Wielkimati](https://github.com/Wielkimati)
 
