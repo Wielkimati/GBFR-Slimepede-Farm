@@ -35,6 +35,11 @@ Apart from that, here's the keybinds used by scripts themselves.
 - F1: Starts the script running
 - Shift+ESC: Exits the script completely.
 
+For the Carpal Tunnel Begone script, the keybinds are similar:
+- F1: Starts spamming LMB.
+- F2: Stops the spam.
+- Shift+ESC: Exits the script completely.
+
 ## Team Setup
 First, get you Rackham up to the task. You definitely should have 100% crit rate, as well as the rest of your team. For other stats, go full damage, so you're hitting your damage cap. Slimes don't really take much damage if it's not a crit, so setuping your team with this is mind is mandatory.
 
