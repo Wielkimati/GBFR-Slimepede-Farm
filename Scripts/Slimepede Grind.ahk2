@@ -9,9 +9,7 @@ loadingTime := 7000
 $F1::{
 	loop{
 		TeleportToQuestCounter()
-
 		GoToQuestCounterAndGetSlimepedeQuest()
-
 		EmbarkOnQuest()
 
 		;Loading quest
@@ -32,13 +30,13 @@ $F1::{
 
 TeleportToQuestCounter(){
 	SendInput "{r down}"
-	Sleep 100
+	Sleep 400
 	SendInput "{r up}"
-	Sleep 500
+	Sleep 2000
 	SendEvent "{LButton}"
-	Sleep 1000
+	Sleep 2000
 	SendEvent "{LButton}"
-	Sleep 3000
+	Sleep 4000
 	SendInput "{w down}"
 	Sleep 1000
 	SendInput "{w up}"
