@@ -54,9 +54,13 @@ Following is optional, but I recommend before doing this, go to your settings an
 - Select windowed mode.
 - Cap the FPS to 60.
 - Change the graphic preset to standard.
-
 After all, no point in making the PC eat more power than it's necessary.
-But for general script usage, it looks like this:
+
+Following settings are not optional:
+- auto run disabled.
+- assist options disabled.
+
+For actual script usage, it's like this:
 - Go to Seedhollow (The second, bigger city).
 - Go to the quest counter and take the Slimepede quest once, by selecting it from "By Difficulty -> Maniac" tab.
 - After that, press 3, 3 again, and left mouse click, to abandon the quest.
