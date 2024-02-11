@@ -41,12 +41,12 @@ For the Carpal Tunnel Begone script, the keybinds are similar:
 - Shift+ESC: Exits the script completely.
 
 ## Team Setup
-First, get you Rackham up to the task. You definitely should have 100% crit rate, as well as the rest of your team. For other stats, go full damage, so you're hitting your damage cap. Slimes don't really take much damage if it's not a crit, so setuping your team with this is mind is mandatory.
+First, get you Rackham up to the task. You definitely should have 100% crit rate, as well as the rest of your team. For other stats, go full damage, so you're hitting your damage cap. Slimes don't really take much damage if it's not a crit, so setuping your team with this in mind is mandatory.
 
 Here's my example Rackham
 ![Example screenshot](https://github.com/Wielkimati/GBFR-Slimepede-Farm/blob/main/RepoImages/ExampleRackham.jpg)
 
-As for the rest of the team, probably anything will work. I used Narmaya, Zeta and Ferry for this.
+As for the rest of the team, probably anything will work. I used Narmaya, Zeta and Ferry for this. But, after talking about it with other people using scripts to grind this quest, it seems like the best choice would be running Eugen, Id in your team.
 
 ## Usage
 Following is optional, but I recommend before doing this, go to your settings and:
