@@ -33,9 +33,13 @@ TeleportToQuestCounter(){
 	Sleep 400
 	SendInput "{r up}"
 	Sleep 2000
-	SendEvent "{LButton}"
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
 	Sleep 2000
-	SendEvent "{LButton}"
+	SendEvent "{LButton Down}"
+	Sleep 500
+	SendEvent "{LButton up}"
 	Sleep 4000
 	SendInput "{w down}"
 	Sleep 1000
@@ -127,9 +131,15 @@ FireWeapon(){
 
 ClearKeys(){
 	SendInput "{w up}"
+	Sleep 5
 	SendInput "{a up}"
+	Sleep 5
 	SendInput "{s up}"
+	Sleep 5
 	SendInput "{d up}"
+	Sleep 5
+	SendEvent "{LButton up}"
+	Sleep 5
 }
 
 $+esc::{
