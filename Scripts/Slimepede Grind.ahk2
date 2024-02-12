@@ -2,9 +2,11 @@
 #Requires AutoHotkey v2.0
 
 ;Timings in miliseconds
-movingTime := 12000
-questTime := 168000
-loadingTime := 7000
+movingTimeWithRunning := 7000
+questTime := 175000 
+loadingTimeQuest := 7000 ;You might need to adjust this if your PC is loading the quest longer than 7 seconds
+loadingTimeTown := 5000 ;same with time for loading back into town, but the generous spam time should be okay with it
+spamTime := 15000
 
 $F1::{
 	loop{
@@ -13,83 +15,117 @@ $F1::{
 		EmbarkOnQuest()
 
 		;Loading quest
-		Sleep loadingTime
+		Sleep loadingTimeQuest
 
 		MoveCharacterToLocationAtStart()
 
+		;wait for quest to end
 		startTime := A_TickCount
 		Loop {
 			MoveCharacterAndShoot()
 		} Until (A_TickCount - startTime > questTime)
+
 		ClearKeys()
 		
-		;Wait for quest end, and wait some more just o be sure everything is in the starting place again
-		Sleep 120000
+		;wait for results to show up
+		Sleep 15000
+
+		;Spoms LMB to get through menus faster
+		startTime := A_TickCount
+		Loop {
+			FireWeapon()
+			Sleep 200
+		} Until (A_TickCount - startTime > spamTime)
+		ClearKeys()
+
+		;wait for loading and to make sure everything's synced
+		Sleep loadingTimeTown
 	}
 }
 
 TeleportToQuestCounter(){
 	SendInput "{r down}"
-	Sleep 400
+	Sleep 50
 	SendInput "{r up}"
 	Sleep 2000
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 200
 	SendEvent "{LButton up}"
 	Sleep 2000
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 200
 	SendEvent "{LButton up}"
-	Sleep 4000
+	Sleep 3000
 	SendInput "{w down}"
 	Sleep 1000
 	SendInput "{w up}"
-	Sleep 1000
+	Sleep 200
 }
 
 GoToQuestCounterAndGetSlimepedeQuest(){
 	SendInput "{f down}"
-	Sleep 500
+	Sleep 200
 	SendInput "{f up}"
-	Sleep 5000
+	Sleep 4000
 
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 50
 	SendEvent "{LButton up}"
-
-	Sleep 2000
+	Sleep 1500
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 50
 	SendEvent "{LButton up}"
-	Sleep 2000
+	Sleep 1500
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 50
 	SendEvent "{LButton up}"
-	Sleep 2000
+	Sleep 1500
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 50
 	SendEvent "{LButton up}"
-	Sleep 2000
+	Sleep 1500
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 50
 	SendEvent "{LButton up}"
-	Sleep 5000
+	Sleep 3000
 }
 
 EmbarkOnQuest(){
 	SendInput "{3 down}"
-	Sleep 500
+	Sleep 50
 	SendInput "{3 up}"
 	Sleep 3000
 	SendEvent "{LButton Down}"
-	Sleep 500
+	Sleep 200
 	SendEvent "{LButton up}"
 }
 
 MoveCharacterToLocationAtStart(){
+	SendInput "{LShift down}{w down}"
+	Sleep movingTimeWithRunning
+	SendInput "{LShift up}{w up}"
+}
+
+MoveCharacterAround(){
 	SendInput "{w down}"
-	Sleep movingTime
+	Sleep 5
 	SendInput "{w up}"
+	Sleep 20
+
+	SendInput "{d down}"
+	Sleep 5
+	SendInput "{d up}"
+	Sleep 20
+
+	SendInput "{s down}"
+	Sleep 5
+	SendInput "{s up}"
+	Sleep 20
+
+	SendInput "{a down}"
+	Sleep 5
+	SendInput "{a up}"
+	Sleep 20
 }
 
 MoveCharacterAndShoot(){
