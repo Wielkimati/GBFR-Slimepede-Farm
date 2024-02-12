@@ -73,6 +73,14 @@ You can end the grinding any time you'd like by pressing Shift + Escape combo. A
 Click the image below to be redirected to an example of this working on YouTube.
 
 [![Video Example](https://img.youtube.com/vi/vcAemD-vFag/0.jpg)](https://www.youtube.com/watch?v=vcAemD-vFag "Video Example")
+## Carpal Tunnel Begone
+Just a cool nice-to-have I'm included as a bonus, since I already made it. Useful if you don't want to develop carpal tunnel syndrome from transmuting sigils.
+Basically spams left mouse click. Usage:
+- Select transmute option you'd like.
+- Press F1 to start.
+- Press F2 to end.
+
+No need to restart the script from .exe when you disable it, like with Slime script.
 ## Contact
 Created by [@Wielkimati](https://github.com/Wielkimati)
 
