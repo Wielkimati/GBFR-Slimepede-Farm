@@ -85,5 +85,6 @@ I'll spend some more time trying to optimize the delays between inputs to make t
 ## Contact
 Created by [@Wielkimati](https://github.com/Wielkimati)
 
-if you'd like to contact me, I prefer Discord: Wielkimati
+if you'd like to contact me, I prefer Discord: Wielkimati.
+But if you'd like to ask about any issue you're having, PLEASE, PRETTY PLEASE, make sure you've followed all of the instructions listed here. My discord is getting spammed enough with those.
 It's my first experience with writing anything on AHK, so feedback and tips are appreciated.
