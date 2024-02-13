@@ -5,7 +5,7 @@
 movingTimeWithRunning := 7000
 questTime := 175000 
 loadingTimeQuest := 7000 ;You might need to adjust this if your PC is loading the quest longer than 7 seconds
-loadingTimeTown := 5000 ;same with time for loading back into town, but the generous spam time should be okay with it
+loadingTimeTown := 10000 ;same with time for loading back into town, but the generous spam time should be okay with it
 spamTime := 15000
 
 $F1::{
@@ -47,7 +47,7 @@ TeleportToQuestCounter(){
 	SendInput "{r down}"
 	Sleep 50
 	SendInput "{r up}"
-	Sleep 2000
+	Sleep 4000
 	SendEvent "{LButton Down}"
 	Sleep 200
 	SendEvent "{LButton up}"
