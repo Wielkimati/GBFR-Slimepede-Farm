@@ -49,7 +49,7 @@ After all, no point in making the PC eat more power than it's necessary.
 Following settings are not optional:
 - auto run disabled.
 - assist options disabled.
-- Quest Cutscene Auto-Skip disabled.
+- Quest Cutscene Auto-Skip enabled.
 - Loading Screen Skip set to auto skip.
 
 For actual script usage, it's like this:
