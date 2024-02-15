@@ -2,8 +2,8 @@
 #Requires AutoHotkey v2.0
 
 ;Timings in miliseconds
-movingTimeWithRunning := 7000
-questTime := 175000 
+movingTimeWithRunning := 8000
+questTime := 172000 
 loadingTimeQuest := 7000 ;You might need to adjust this if your PC is loading the quest longer than 7 seconds
 loadingTimeTown := 10000 ;same with time for loading back into town, but the generous spam time should be okay with it
 spamTime := 15000
@@ -24,9 +24,8 @@ $F1::{
 		Loop {
 			MoveCharacterAndShoot()
 		} Until (A_TickCount - startTime > questTime)
-
 		ClearKeys()
-		
+
 		;wait for results to show up
 		Sleep 15000
 
@@ -106,56 +105,34 @@ MoveCharacterToLocationAtStart(){
 	SendInput "{LShift up}{w up}"
 }
 
-MoveCharacterAround(){
-	SendInput "{w down}"
-	Sleep 5
-	SendInput "{w up}"
-	Sleep 20
-
-	SendInput "{d down}"
-	Sleep 5
-	SendInput "{d up}"
-	Sleep 20
-
-	SendInput "{s down}"
-	Sleep 5
-	SendInput "{s up}"
-	Sleep 20
-
-	SendInput "{a down}"
-	Sleep 5
-	SendInput "{a up}"
-	Sleep 20
-}
-
 MoveCharacterAndShoot(){
 	SendInput "{w down}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 	SendInput "{w up}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 
 	SendInput "{d down}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 	SendInput "{d up}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 
 	SendInput "{s down}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 	SendInput "{s up}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 
 	SendInput "{a down}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 	SendInput "{a up}"
-	FireWeapon()
 	Sleep 20
+	FireWeapon()
 }
 
 FireWeapon(){
